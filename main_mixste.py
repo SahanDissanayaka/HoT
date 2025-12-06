@@ -10,7 +10,7 @@ import logging
 import numpy as np
 from tqdm import tqdm
 import torch.nn as nn
-from torch.utils.data import Dataset
+import torch.utils.data
 from common.utils import *
 import torch.optim as optim
 from common.camera import *
