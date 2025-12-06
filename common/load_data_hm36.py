@@ -1,11 +1,11 @@
 import sys
-import torch.utils.data as data
+from torch.utils.data import Dataset
 
 from common.camera import *
 from common.utils import deterministic_random
 
 
-class Fusion(data.Dataset):
+class Fusion(Dataset):
     def __init__(self, opt, dataset, root_path, train=True):
         if opt.stride == 1:
             from common.generator import ChunkedGenerator
